@@ -44,7 +44,7 @@
   <div id="page2" class="part">
     <h2>COMPÉTENCES</h2>
     <div id="description">
-      <p><?php echo htmlspecialchars($_POST['description_compétence']);?></p>
+      <p><?php echo htmlspecialchars($_POST['description_competence']);?></p>
     </div>
 
     <ul id="skill">

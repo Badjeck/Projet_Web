@@ -54,7 +54,7 @@
   <div id="page2" class="part">
     <h2>COMPÉTENCES</h2>
     <div id="description">
-      <textarea name="description_compétence"  min ="5" maxlength="600" placeholder="description des compétences"></textarea>
+      <textarea name="description_competence"  min ="5" maxlength="600" placeholder="description des compétences"></textarea>
     </div>
 
     <ul id="skill">
@@ -90,9 +90,9 @@
     <input type="text" name="projet1" placeholder="Nom projet" maxlength="20" autocomplete="off">
       <div>
         <div id="img">
-          <input type="text" name="imgp1" placeholder="url image" maxlength="50" autocomplete="off">
+          <input type="text" name="imgp1" placeholder="url image" maxlength="100" autocomplete="off">
         </div>
-        <textarea name="desc1"  min ="5" maxlength="100" placeholder="description projet"></textarea>
+        <textarea name="desc1"  min ="5" maxlength="200" placeholder="description projet"></textarea>
       </div>
     </div>
 

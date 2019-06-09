@@ -24,30 +24,32 @@
     <h1>CONTACT</h1>
     <div id="contact">
         <div id="c1">
-            <div class="c-entry">
-                <input type="text" name="Nom" placeholder="NOM" maxlength="30">
-            </div>
+            <form id="contact" method="post" action="traitement_formulaire.php">
+                <div class="c-entry">
+                    <input type="text" id="nom" name="nom" placeholder="NOM" maxlength="30">
+                </div>
 
-            <div class="c-entry">
-                <input  type ="text" name="prenom" placeholder="PRÉNOM" maxlength="30">
-            </div>
-            
-            <div class="c-entry">
-                <input type="text"  name="email" placeholder="E-MAIL" min="4" maxlength="56">
-            </div>
-            
-            <div class="c-entry">
-                <input type="text"  name="raison sociale" placeholder="RAISON SOCIALE" min="2" maxlength="50">
-            </div>
+                <div class="c-entry">
+                    <input  type ="text" name="prenom" placeholder="PRÉNOM" maxlength="30">
+                </div>
 
-            <div class="c-entry">
-                <input  type ="text" name="sujet" placeholder="SUJET" maxlength="0">
-            </div>
+                <div class="c-entry">
+                    <input type="text" id="email" name="email" placeholder="E-MAIL" min="4" maxlength="56">
+                </div>
+
+                <div class="c-entry">
+                    <input type="text"  name="raison sociale" placeholder="RAISON SOCIALE" min="2" maxlength="50">
+                </div>
+
+                <div class="c-entry">
+                    <input  type ="text" id ="objet" name="Objet" placeholder="OBJET" maxlength="0">
+                </div>
+            </form>
         </div>
 
 
         <div id="c-mess">
-            <textarea name="message"  min ="5" maxlength="600" placeholder="ENTREZ VOTRE MESSAGE ICI"></textarea>
+            <textarea id="message" name="message"  min ="5" maxlength="600" placeholder="ENTREZ VOTRE MESSAGE ICI"></textarea>
         </div>
     </div>
     <div id="send">
