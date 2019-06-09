@@ -13,11 +13,12 @@
 </head>
 <body>
 <?php
-  if (isset($_POST['mdp']) AND $_POST['mdp'] ==  "oui") // Si le mot de passe est bon
+  include_once 'command.php';
+  if (isset($_POST['mdp']) AND $_POST['mdp'] ==  $mdp) // Si le mot de passe est bon
     {
     // On affiche les codes
     ?>
-  <form action="view.php" method="post">
+  <form action="oui.php" method="post">
   <div id="download">
     <input name="licorne" type="submit" value="Prévisualiation"/>  
   </div>
@@ -61,22 +62,22 @@
       <li class="skill-cont">
         <input type="text" name="skill1" placeholder="Catégorie des compétences" maxlength="20" autocomplete="off">
         <ul>
-          <li><input type="text" name="nomcompétence1.1" placeholder="Compétences" maxlength="30" autocomplete="off"><input type="text" name="pourcent1.1" placeholder="%" maxlength="3" autocomplete="off"></li>
-          <li><input type="text" name="nomcompétence1.2" placeholder="Compétences" maxlength="30" autocomplete="off"><input type="text" name="pourcent1.1" placeholder="%" maxlength="3" autocomplete="off"></li>
-          <li><input type="text" name="nomcompétence1.3" placeholder="Compétences" maxlength="30" autocomplete="off"><input type="text" name="pourcent1.1" placeholder="%" maxlength="3" autocomplete="off"></li>
-          <li><input type="text" name="nomcompétence1.4" placeholder="Compétences" maxlength="30" autocomplete="off"><input type="text" name="pourcent1.1" placeholder="%" maxlength="3" autocomplete="off"></li>
-          <li><input type="text" name="nomcompétence1.5" placeholder="Compétences" maxlength="30" autocomplete="off"><input type="text" name="pourcent1.1" placeholder="%" maxlength="3" autocomplete="off"></li>
+          <li><input type="text" name="compétence11" placeholder="Compétences" maxlength="30" autocomplete="off"><input type="text" name="pourcent1.1" placeholder="%" maxlength="3" autocomplete="off"></li>
+          <li><input type="text" name="compétence12" placeholder="Compétences" maxlength="30" autocomplete="off"><input type="text" name="pourcent1.1" placeholder="%" maxlength="3" autocomplete="off"></li>
+          <li><input type="text" name="compétence13" placeholder="Compétences" maxlength="30" autocomplete="off"><input type="text" name="pourcent1.1" placeholder="%" maxlength="3" autocomplete="off"></li>
+          <li><input type="text" name="compétence14" placeholder="Compétences" maxlength="30" autocomplete="off"><input type="text" name="pourcent1.1" placeholder="%" maxlength="3" autocomplete="off"></li>
+          <li><input type="text" name="compétence15" placeholder="Compétences" maxlength="30" autocomplete="off"><input type="text" name="pourcent1.1" placeholder="%" maxlength="3" autocomplete="off"></li>
         </ul>
       </li>
       
       <li class="skill-cont">
         <input type="text" name="skill2" placeholder="Catégorie des compétences" maxlength="20" autocomplete="off">
           <ul>
-            <li><input type="text" name="nomcompétence2.1" placeholder="Compétences" maxlength="30" autocomplete="off"><input type="text" name="pourcent1.1" placeholder="%" maxlength="3" autocomplete="off"></li>
-            <li><input type="text" name="nomcompétence2.2" placeholder="Compétences" maxlength="30" autocomplete="off"><input type="text" name="pourcent1.1" placeholder="%" maxlength="3" autocomplete="off"></li>
-            <li><input type="text" name="nomcompétence2.3" placeholder="Compétences" maxlength="30" autocomplete="off"><input type="text" name="pourcent1.1" placeholder="%" maxlength="3" autocomplete="off"></li>
-            <li><input type="text" name="nomcompétence2.4" placeholder="Compétences" maxlength="30" autocomplete="off"><input type="text" name="pourcent1.1" placeholder="%" maxlength="3" autocomplete="off"></li>
-            <li><input type="text" name="nomcompétence2.5" placeholder="Compétences" maxlength="30" autocomplete="off"><input type="text" name="pourcent1.1" placeholder="%" maxlength="3" autocomplete="off"></li>
+            <li><input type="text" name="compétence21" placeholder="Compétences" maxlength="30" autocomplete="off"><input type="text" name="pourcent1.1" placeholder="%" maxlength="3" autocomplete="off"></li>
+            <li><input type="text" name="compétence22" placeholder="Compétences" maxlength="30" autocomplete="off"><input type="text" name="pourcent1.1" placeholder="%" maxlength="3" autocomplete="off"></li>
+            <li><input type="text" name="compétence23" placeholder="Compétences" maxlength="30" autocomplete="off"><input type="text" name="pourcent1.1" placeholder="%" maxlength="3" autocomplete="off"></li>
+            <li><input type="text" name="compétence24" placeholder="Compétences" maxlength="30" autocomplete="off"><input type="text" name="pourcent1.1" placeholder="%" maxlength="3" autocomplete="off"></li>
+            <li><input type="text" name="compétence25" placeholder="Compétences" maxlength="30" autocomplete="off"><input type="text" name="pourcent1.1" placeholder="%" maxlength="3" autocomplete="off"></li>
           </ul>
       </li>
     </ul>

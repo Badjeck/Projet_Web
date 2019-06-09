@@ -131,7 +131,9 @@ $projet = $pdo->prepare("SELECT * FROM projet WHERE id='4'");
 $projet->execute();
 $prdesc4 = $projet->fetch()['description'];
 
-
+$usr = $pdo->prepare("SELECT * FROM users");
+$usr->execute();
+$mdp = $usr->fetch()['password'];
 
 
 
