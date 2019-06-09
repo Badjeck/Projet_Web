@@ -8,6 +8,7 @@
   <link rel="icon" type="image/png" href="images/logo.ico">
   <link rel="stylesheet" type="text/css" href="update.css" media="all"/>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <meta http-equiv="refresh" content="5; URL=preview.php">
 
 <title>Update</title>
 </head>
@@ -79,20 +80,26 @@
     if(isset($_POST['compétences12']))
     {   
         $ccomp12 =$_POST['compétences12'];
-        $comp = $pdo->prepare("UPDATE `profil` SET `description`=$cdesc WHERE id='1'");
+        $comp = $pdo->prepare("UPDATE `profil` SET `comp2`=$ccomp12 WHERE id='1'");
         $comp->execute();
     }
     if(isset($_POST['compétences13']))
     {   
         $ccomp13 =$_POST['compétences13'];
+        $comp = $pdo->prepare("UPDATE `profil` SET `comp3`=$ccomp13 WHERE id='1'");
+        $comp->execute();
     }
     if(isset($_POST['compétences14']))
     {   
         $ccomp14 =$_POST['compétences14'];
+        $comp = $pdo->prepare("UPDATE `profil` SET `comp4`=$ccomp14 WHERE id='1'");
+        $comp->execute();
     }
     if(isset($_POST['compétences15']))
     {   
         $ccomp15 =$_POST['compétences15'];
+        $comp = $pdo->prepare("UPDATE `profil` SET `comp5`=$ccomp15 WHERE id='1'");
+        $comp->execute();
     }
 
     if(isset($_POST['skill2']))
