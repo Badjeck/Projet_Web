@@ -13,9 +13,6 @@
 </head>
 <body>
 <?php include_once 'command.php'?>
-<div id="download">
-  <a href="https://auvencecom-my.sharepoint.com/:b:/g/personal/gabriel_fougerolle_ynov_com/EWX-bKiK6WZFrUriHNlkhnYBxNRXQwlN71A_61RDYIb8kA?e=mF6Hnu" alt="Télécharger le cv au format PDF" title="Télécharger le fomat pdf"><p>COMMIT</p></a>  
-</div>
   <div class="part">
     <div id=leftblock>
       <?php echo "<img src='".$pimg. "' alt='Photo de profil' title='Photo de profil' id='pprofil'>";?>

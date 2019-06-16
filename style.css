@@ -192,7 +192,7 @@ label{
     float:left;
     margin: 0px 2%;
     width:96%;
-    height:700px;
+    height:300px;
 }
 
 #c1{
@@ -213,6 +213,7 @@ label{
 
 #c-mess{
     height:60%;
+    margin-left:2%;
 }
 
 
@@ -222,8 +223,8 @@ label{
     background-color: #F5F5F5;
     font-size:large;
     border-radius: 20px;
-    width:90.4%;
-    height:90%;
+    width:88.5%;
+    height:300px;
     margin:1% 2%;
     padding:0.2% 1%;
     resize:none;
